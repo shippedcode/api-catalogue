@@ -5,23 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>APIs in the UK government - API Catalogue</title>
+    <title>Personal Demographics Service - SMSP API - API Catalogue</title>
 
     <link href="/api-catalogue/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="https://alphagov.github.io/api-catalogue/api-catalogue/">
+    <link rel="canonical" href="https://alphagov.github.io/api-catalogue/api-catalogue/nhs/personal-demographics-service-smsp-api/">
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:domain" content="alphagov.github.io" />
       <meta name="twitter:image" content="https://alphagov.github.io/api-catalogue/images/govuk-large.png" />
-      <meta name="twitter:title" content="APIs in the UK government - API Catalogue" />
-      <meta name="twitter:url" content="https://alphagov.github.io/api-catalogue/api-catalogue/" />
+      <meta name="twitter:title" content="Personal Demographics Service - SMSP API - API Catalogue" />
+      <meta name="twitter:url" content="https://alphagov.github.io/api-catalogue/api-catalogue/nhs/personal-demographics-service-smsp-api/" />
 
       <meta property="og:image" content="https://alphagov.github.io/api-catalogue/images/govuk-large.png" />
       <meta property="og:site_name" content="API Catalogue" />
-      <meta property="og:title" content="APIs in the UK government" />
+      <meta property="og:title" content="Personal Demographics Service - SMSP API" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="https://alphagov.github.io/api-catalogue/api-catalogue/" />
+      <meta property="og:url" content="https://alphagov.github.io/api-catalogue/api-catalogue/nhs/personal-demographics-service-smsp-api/" />
 
     
   </head>
@@ -916,26 +916,29 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="uk-government-apis">UK Government APIs</h1><p>This API catalogue is for central and local government APIs.</p>
-<p>If you&rsquo;re working on an API that publishes open data or connects government with other organisations, industry or consumers, we’d like to invite you to publish details of it in this catalogue. You can publish details of your API by submitting a <a href="https://github.com/alphagov/api-catalogue/issues">GitHub Issue</a>.</p>
-<p>Collecting a list of government APIs will help us understand:</p>
+            <h1 id="personal-demographics-service-smsp-api">Personal Demographics Service - SMSP API</h1>
 
-<ul>
-<li>what APIs are published</li>
-<li>where API development is taking place</li>
-<li>whether APIs are suitable for reuse</li>
-</ul>
-<p>and will help users across government find and access inter-departmental data exchanges.</p>
-<p>If you have any questions, please contact: <a href="mailto:api-catalogue@digital.cabinet-office.gov.uk">api-catalogue@digital.cabinet-office.gov.uk</a>.
-If you are looking to set up an api.gov.uk domain for your API, please contact: <a href="mailto:api-standards-request@digital.cabinet-office.gov.uk">api-standards-request@digital.cabinet-office.gov.uk</a>.</p>
+
+  <h2>Documentation URL:</h2>
+  <ul>
+    <li><a href="https://digital.nhs.uk/services/spine/spine-mini-service-provider-for-personal-demographics-service">https://digital.nhs.uk/services/spine/spine-mini-service-provider-for-personal-demographics-service</a></li>
+  </ul>
+
+
+  <h2>Description:</h2>
+  SMSP is a middleware application that presents a simpler interface to local systems than that provided by full Spine integration, but with more limited capabilities. It requires a secure network connection (through N3 or its successor - HSCN), but smartcards are not required, because only exact matches to trace requests are returned, and updates to the Spine service are not possible.  It provides a web service interface, as part of the Spine platform, for a local SMS Client to directly query a subset of Spine services, meaning:-n-n    health and social care organisations can access some types of patient information (initially PDS) more easily-n    third-party developers can integrate their systems with Spine more easily whilst continuing to develop local Client applications to meet the needs of End Users-n-nIt also provides a lighter weight assurance process using the NHS Digital self-certified approach (known as the PDS Access Request Form and the  Supplier Conformance Assessment List) to address clinical safety, operational readiness and information governance issues.-n
+
+
+
+
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/alphagov/api-catalogue/blob/master/source/index.html.md">View source</a></li>
-                <li><a href="https://github.com/alphagov/api-catalogue/issues/new?labels=bug&amp;title=Re:%20'APIs%20in%20the%20UK%20government'&amp;body=Problem%20with%20'APIs%20in%20the%20UK%20government'%20(https://alphagov.github.io/api-catalogue/api-catalogue/)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/api-catalogue/blob/master/source/api_details.html.erb">View source</a></li>
+                <li><a href="https://github.com/alphagov/api-catalogue/issues/new?labels=bug&amp;title=Re:%20'Personal%20Demographics%20Service%20-%20SMSP%20API'&amp;body=Problem%20with%20'Personal%20Demographics%20Service%20-%20SMSP%20API'%20(https://alphagov.github.io/api-catalogue/api-catalogue/nhs/personal-demographics-service-smsp-api/)">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/api-catalogue">GitHub Repo</a></li>
               </ul>
           </aside>

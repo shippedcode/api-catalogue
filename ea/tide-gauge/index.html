@@ -5,23 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>APIs in the UK government - API Catalogue</title>
+    <title>Tide Gauge - API Catalogue</title>
 
     <link href="/api-catalogue/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="https://alphagov.github.io/api-catalogue/api-catalogue/">
+    <link rel="canonical" href="https://alphagov.github.io/api-catalogue/api-catalogue/ea/tide-gauge/">
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:domain" content="alphagov.github.io" />
       <meta name="twitter:image" content="https://alphagov.github.io/api-catalogue/images/govuk-large.png" />
-      <meta name="twitter:title" content="APIs in the UK government - API Catalogue" />
-      <meta name="twitter:url" content="https://alphagov.github.io/api-catalogue/api-catalogue/" />
+      <meta name="twitter:title" content="Tide Gauge - API Catalogue" />
+      <meta name="twitter:url" content="https://alphagov.github.io/api-catalogue/api-catalogue/ea/tide-gauge/" />
 
       <meta property="og:image" content="https://alphagov.github.io/api-catalogue/images/govuk-large.png" />
       <meta property="og:site_name" content="API Catalogue" />
-      <meta property="og:title" content="APIs in the UK government" />
+      <meta property="og:title" content="Tide Gauge" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="https://alphagov.github.io/api-catalogue/api-catalogue/" />
+      <meta property="og:url" content="https://alphagov.github.io/api-catalogue/api-catalogue/ea/tide-gauge/" />
 
     
   </head>
@@ -916,26 +916,33 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="uk-government-apis">UK Government APIs</h1><p>This API catalogue is for central and local government APIs.</p>
-<p>If you&rsquo;re working on an API that publishes open data or connects government with other organisations, industry or consumers, we’d like to invite you to publish details of it in this catalogue. You can publish details of your API by submitting a <a href="https://github.com/alphagov/api-catalogue/issues">GitHub Issue</a>.</p>
-<p>Collecting a list of government APIs will help us understand:</p>
+            <h1 id="tide-gauge">Tide Gauge</h1>
 
-<ul>
-<li>what APIs are published</li>
-<li>where API development is taking place</li>
-<li>whether APIs are suitable for reuse</li>
-</ul>
-<p>and will help users across government find and access inter-departmental data exchanges.</p>
-<p>If you have any questions, please contact: <a href="mailto:api-catalogue@digital.cabinet-office.gov.uk">api-catalogue@digital.cabinet-office.gov.uk</a>.
-If you are looking to set up an api.gov.uk domain for your API, please contact: <a href="mailto:api-standards-request@digital.cabinet-office.gov.uk">api-standards-request@digital.cabinet-office.gov.uk</a>.</p>
+  <h2>Endpoint URL:</h2>
+  <ul>
+    <li><a href="http://environment.data.gov.uk/flood-monitoring/id/stations?type=TideGauge">http://environment.data.gov.uk/flood-monitoring/id/stations?type=TideGauge</a></li>
+  </ul>
+
+  <h2>Documentation URL:</h2>
+  <ul>
+    <li><a href="http://environment.data.gov.uk/flood-monitoring/doc/tidegauge">http://environment.data.gov.uk/flood-monitoring/doc/tidegauge</a></li>
+  </ul>
+
+
+  <h2>Description:</h2>
+  The UK National Tide Gauge Network is owned and operated by the Environment Agency on behalf of the UK Coastal Flood Forecasting service (a partnership between the Environment Agency, Natural Resources Wales, the Scottish Environment Protection Agency and Northern Ireland Department for Infrastructure - Rivers. It records tidal elevations at 44 locations around the UK coast. Data is made available in near real-time with measurements reported every 15 mins. The measurements provide mean sea level within each 15 min window and are reported both relative to local datum (unit m) and relative to the Ordnance Datum at Newlyn (unit mAOD).&#x2F;n&#x2F;nThe Tide Gauge API provides access to these measurements, and to information on the monitoring stations providing those measurements. It is compatible with (and integrated into) the API for water level&#x2F;flow and rainfall readings. The API data is normally updated every 15 mins so typically the latest available reading will lag between 15 and 30 mins.&#x2F;n&#x2F;nNote that all times given by the API are in GMT (also known as UTC), as indicated by the Z suffix (see XML Schema datatypes).&#x2F;n&#x2F;nThese APIs are provided as open data under the Open Government Licence with no requirement for registration. If you make use of this data please acknowledge this with the following attribution statement:&#x2F;n&#x2F;nthis uses Environment Agency tide gauge data from the real-time data API (Beta)&#x2F;n&#x2F;nPlease visit the Defra Data Services Forum to let us know about any issues or to ask questions.
+
+
+
+
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/alphagov/api-catalogue/blob/master/source/index.html.md">View source</a></li>
-                <li><a href="https://github.com/alphagov/api-catalogue/issues/new?labels=bug&amp;title=Re:%20'APIs%20in%20the%20UK%20government'&amp;body=Problem%20with%20'APIs%20in%20the%20UK%20government'%20(https://alphagov.github.io/api-catalogue/api-catalogue/)">Report problem</a></li>
+                <li><a href="https://github.com/alphagov/api-catalogue/blob/master/source/api_details.html.erb">View source</a></li>
+                <li><a href="https://github.com/alphagov/api-catalogue/issues/new?labels=bug&amp;title=Re:%20'Tide%20Gauge'&amp;body=Problem%20with%20'Tide%20Gauge'%20(https://alphagov.github.io/api-catalogue/api-catalogue/ea/tide-gauge/)">Report problem</a></li>
                 <li><a href="https://github.com/alphagov/api-catalogue">GitHub Repo</a></li>
               </ul>
           </aside>
