@@ -23,4 +23,7 @@ jobs:
 
       - name: Publish
         if: ${{ github.ref == 'refs/heads/master' }}
-        run: bin/publish
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
+          bundle exec rake publish

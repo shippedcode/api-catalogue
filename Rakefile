@@ -12,8 +12,8 @@ task :publish do
   rev = `git rev-parse --short HEAD`.chomp
 
   sh("git clone --single-branch --branch gh-pages #{repo_url} #{publish_dir}")
-  sh("rsync -a --delete build/api-catalogue/ #{publish_dir}")
-  # sh("git -C #{publish_dir} add --all")
-  # sh("git -C #{publish_dir} commit -m 'Publish #{rev}'")
-  # sh("git -C #{publish_dir} push")
+  sh("rsync -a --delete --exclude .git build/api-catalogue/ #{publish_dir}")
+  sh("git -C #{publish_dir} add --all")
+  sh("git -C #{publish_dir} commit -m 'Publish #{rev}'")
+  sh("git -C #{publish_dir} push")
 end
