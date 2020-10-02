@@ -21,11 +21,16 @@ jobs:
       - name: Build
         run: bundle exec rake build
 
+      - name: Checkout gh-pages
+        if: ${{ github.ref == 'refs/heads/master' }}
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: tmp/publish
+
       - name: Publish
         if: ${{ github.ref == 'refs/heads/master' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
-          bundle exec rake publish
+          bundle exec rake publish CLONED_GH_PAGES_DIR="tmp/publish"
