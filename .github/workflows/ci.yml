@@ -18,10 +18,9 @@ jobs:
       - name: Test
         run: bundle exec rspec
 
-      - name: Build only
-        if: ${{ github.ref != 'refs/heads/master' }}
+      - name: Build
         run: bundle exec rake build
 
-      - name: Build and publish
+      - name: Publish
         if: ${{ github.ref == 'refs/heads/master' }}
-        run: bundle exec rake publish BUILD_DIR=build/api-catalogue
+        run: bin/publish

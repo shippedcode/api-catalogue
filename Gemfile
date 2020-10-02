@@ -11,11 +11,10 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Include the tech docs gem
 gem 'govuk_tech_docs', git: 'https://github.com/alphagov/tech-docs-gem.git', branch: 'http-prefix-support'
 
-# For helping with deployment
-gem 'middleman-gh-pages'
-
 # For data attributes
 gem 'activemodel'
+
+gem 'rake'
 
 group :test do
   gem 'rspec'
